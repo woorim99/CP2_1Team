@@ -19,7 +19,7 @@
 8. **user_id**: 고객 고유 id
 9. **user_session**: 고객 세션
 
-## 데이터 시각화 및 분석 (이우림)
+## 데이터 시각화 및 분석 - cp2.ipynb
 ### 1. 대분류 카테고리 별 전환율
 ![image](https://user-images.githubusercontent.com/64140376/185625223-fd476586-7446-4a51-a943-077b6dee6c3d.png)
 > - electronics는 높은 전환율, apparel은 낮은 전환율
@@ -42,11 +42,11 @@
 > - 옷이나 문구류 등의 객단가가 낮은 편
 >> - 단가가 낮으므로 객단가가 낮은 것이 당연하지만 만약 객단가를 높이는 방안을 탐색해 본다면 묶음 상품을 좀 더 저렴하게 판매하거나 무료배송료 금액 기준을 설정하는 방법 등이 존재
 
-## 아이템 기반 협업 필터링 (이우림)
+## 아이템 기반 협업 필터링 - cp2_recommend_system_baseline.ipynb
 1. 아이템 간 유사도를 활용한 협업 필터링을 진행하기 위해서 이벤트 타입 별로 view는 1점, cart는 2점, purchase는 3점 부여
 2. 제품들의 코사인 유사도 측정
 
-## XGBoost 모델링 (이상빈)
+## XGBoost 모델링
 1. Cart/View에서 고객이 제품을 구매할 것인지 예측하는 모델
 2. 특성 공학
 > - category_code_level1: 메인 카테고리
@@ -54,7 +54,7 @@
 > - activity_count: user_session을 통한 활동 수 카운트
 > - is_purchase: cart/view의 품목 구매 여부
 
-## 추천 시스템 (이우림)
+## 추천 시스템 - cp2_recommend_system.ipynb
 ![image](https://user-images.githubusercontent.com/64140376/185628037-686fc760-5dc8-4990-82e7-24e69b22d5f0.png)
 1. 고객 아이디를 입력하게 되면 고객이 가장 최근 조회한 아이템과 유사한 5개의 아이템들을 아이템 기반 협업 필터링을 통해 추출
 2. 그 5개의 아이템들을 XGBoost 모델에 넣어 고객이 그 아이템을 구매할지 예측
